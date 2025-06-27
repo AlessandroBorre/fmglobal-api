@@ -1,0 +1,28 @@
+
+openapi: 3.0.1
+info:
+  title: FMGlobalQueryAPI
+  version: '1.0'
+paths:
+  /query:
+    post:
+      summary: Cerca nei documenti FM Global
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                question:
+                  type: string
+      responses:
+        '200':
+          description: Risposta con contenuto rilevante
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  answer:
+                    type: string
