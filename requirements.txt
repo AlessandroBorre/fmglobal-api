@@ -4,6 +4,7 @@ uvicorn[standard]
 python-multipart
 PyMuPDF
 langchain
+langchain-community
 openai
 faiss-cpu
 pydantic
